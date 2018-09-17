@@ -13,12 +13,11 @@ addons:
       - docker-ce
 
 install: 
-  - chmod +x ./scripts/installs.sh
-  - cd scripts && ./installs.sh
 
 script:
   - chmod +x ./deploy-envs.sh  
+  - chmod +x ./scripts/installs.sh
   - chmod +x ./scripts/build.sh
   - chmod +x ./scripts/deploy.sh
-  - ./build.sh
+  - cd scripts && ./build.sh
   - if [ "$TRAVIS_BRANCH" == "master" ]; then ./deploy.sh; fi
