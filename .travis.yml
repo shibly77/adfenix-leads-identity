@@ -14,7 +14,7 @@ addons:
 
 install: 
   - chmod +x ./scripts/install-dependencies.sh
-  - cd scripts && ./install-dependencies.sh
+  - cd scripts && ./installs.sh
 
 script:
   - chmod +x ./deploy-envs.sh  
