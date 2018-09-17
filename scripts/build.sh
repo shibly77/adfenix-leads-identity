@@ -5,8 +5,9 @@ source ../deploy-envs.sh
 export AWS_ECS_REPO_DOMAIN=$AWS_ACCOUNT_NUMBER.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
 
 
-git clone https://github.com/AdfenixLeads/adfenix-leads-core.git ../../adfenix-leads-core
-cd ../../../adfenix-leads-core
+git clone https://github.com/AdfenixLeads/adfenix-leads-core.git adfenix-leads-core
+ls
+cd adfenix-leads-core
 ls
 
 # Build process
