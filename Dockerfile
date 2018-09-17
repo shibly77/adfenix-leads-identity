@@ -10,4 +10,4 @@ FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /app
 COPY --from=build-env /app/Identity/out .
 ENV ASPNETCORE_URLS http://*:5000
-ENTRYPOINT ["dotnet", "Identity.API.dll"]
+ENTRYPOINT ["dotnet", "identity.api.dll"]
