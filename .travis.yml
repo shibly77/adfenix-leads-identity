@@ -13,7 +13,7 @@ addons:
       - docker-ce
 
 install: 
-  - chmod +x ./scripts/install-dependencies.sh
+  - chmod +x ./scripts/installs.sh
   - cd scripts && ./installs.sh
 
 script:
