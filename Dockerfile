@@ -1,13 +1,26 @@
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+
+FROM microsoft/aspnetcore-build:2.0 AS build-env
+
 COPY src /app
+
 WORKDIR /app
+
+
 
 RUN dotnet restore
+
 RUN dotnet publish -c Release -o out
 
+
+
 # Build runtime image
-FROM microsoft/dotnet:2.1-sdk AS build
+
+FROM microsoft/aspnetcore:2.0
+
 WORKDIR /app
-COPY --from=build-env /app/Identity/out .
+
+COPY --from=build-env /app/RedisGeo/out .
+
 ENV ASPNETCORE_URLS http://*:5000
-ENTRYPOINT ["dotnet", "identity.api.dll"]
+
+ENTRYPOINT ["dotnet", "Identity.API.dll"]
