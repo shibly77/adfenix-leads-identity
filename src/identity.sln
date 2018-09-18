@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.API", "identity-api\Identity.API.csproj", "{628FD1C2-1508-4877-BDEE-5B13AC123796}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.HealthChecks", "..\..\adfenix-leads-core\src\HealthChecks\src\Microsoft.AspNetCore.HealthChecks\Microsoft.AspNetCore.HealthChecks.csproj", "{8B8460DB-9B65-447A-B15F-D462D5AF5EB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.HealthChecks", "deps\depsadfenix-leads-core\src\HealthChecks\src\Microsoft.AspNetCore.HealthChecks\Microsoft.AspNetCore.HealthChecks.csproj", "{8B8460DB-9B65-447A-B15F-D462D5AF5EB2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.HealthChecks", "..\..\adfenix-leads-core\src\HealthChecks\src\Microsoft.Extensions.HealthChecks\Microsoft.Extensions.HealthChecks.csproj", "{A3F0B51D-8824-4CA6-AA0E-B75C5F1DC05B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.HealthChecks", "deps\adfenix-leads-core\src\HealthChecks\src\Microsoft.Extensions.HealthChecks\Microsoft.Extensions.HealthChecks.csproj", "{A3F0B51D-8824-4CA6-AA0E-B75C5F1DC05B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.HealthChecks.SqlServer", "..\..\adfenix-leads-core\src\HealthChecks\src\Microsoft.Extensions.HealthChecks.SqlServer\Microsoft.Extensions.HealthChecks.SqlServer.csproj", "{553852EB-2A42-418A-A6B8-95461555AC13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.HealthChecks.SqlServer", "deps\adfenix-leads-core\src\HealthChecks\src\Microsoft.Extensions.HealthChecks.SqlServer\Microsoft.Extensions.HealthChecks.SqlServer.csproj", "{553852EB-2A42-418A-A6B8-95461555AC13}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHost.Customization", "..\..\adfenix-leads-core\src\WebHostCustomization\WebHost.Customization\WebHost.Customization.csproj", "{55FC13E7-10B9-46A9-8928-4210043A52B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHost.Customization", "deps\adfenix-leads-core\src\WebHostCustomization\WebHost.Customization\WebHost.Customization.csproj", "{55FC13E7-10B9-46A9-8928-4210043A52B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
