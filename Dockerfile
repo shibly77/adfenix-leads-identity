@@ -1,6 +1,8 @@
 
 FROM microsoft/dotnet:2.1-sdk AS build-env
 COPY src /app
+COPY deps /app
+
 WORKDIR /app
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
